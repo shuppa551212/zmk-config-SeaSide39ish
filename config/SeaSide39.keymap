@@ -28,6 +28,13 @@
             label = "TO_LAYER_0";
         };
 
+        LR_PAR: LR_PAR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT5 &kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "LR_PAR";
+        };
+
         LR_BRC: LR_BRC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
