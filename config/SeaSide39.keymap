@@ -54,7 +54,7 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        SYMBOL {
+        FUNCTION {
             bindings = <
 &kp PRCNT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp FSLH                             &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
 &kp AT     &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON
@@ -108,6 +108,18 @@
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &bootloader  &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans                               &trans
             >;
+        };
+    };
+
+    ttp224tap: ttp224tap {
+        compatible = "zmk,kscan-sideband-behaviors";
+        kscan = <&touchkey1>;
+        auto-enable;
+
+        touch {
+            column = <0>;
+            row = <0>;
+            bindings = <&mo 4>;
         };
     };
 };
