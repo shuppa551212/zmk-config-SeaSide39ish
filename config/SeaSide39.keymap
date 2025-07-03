@@ -27,6 +27,56 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        LR_BRC: LR_BRC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(RBKT) &kp LS(NUHS) &kp LEFT>;
+            label = "LR_BRC";
+        };
+
+        LR_BKT: LR_BKT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp RBKT &kp NUHS &kp LEFT>;
+            label = "LR_BKT";
+        };
+
+        LR_KAKKO: LR_KAKKO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_4 &kp RBKT &kp NUHS &kp ENTER &kp LEFT>;
+            label = "LR_KAKKO";
+        };
+
+        LR_SQT: LR_SQT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(N7) &kp LS(N7) &kp LEFT>;
+            label = "LR_SQT";
+        };
+
+        LR_DQT: LR_DQT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT>;
+            label = "LR_DQT";
+        };
+
+        LR_ASTRK: LR_ASTRK {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(SQT) &kp LS(SQT) &kp LEFT_ARROW>;
+            label = "LR_ASTRK";
+        };
+
+        SX_ST_DEF: SX_ST_DEF {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp SQT &kp LS(MINUS) &kp SPACE &kp SPACE &kp SEMI &kp LEFT &kp LEFT>;
+            label = "SX_ST_DEF";
+        };
+
     };
 
     behaviors {
