@@ -86,4 +86,9 @@
             , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             ;
     };
+
+    touchkey1: touchkey {
+        compatible = "zmk,kscan-gpio-direct";
+        input-gpios = <&gpio1 00 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    };
 };
