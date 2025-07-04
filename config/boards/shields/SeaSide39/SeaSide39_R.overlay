@@ -66,9 +66,8 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         // automouse-layer = <4>; //ここをコメントアウトするとオートマウスレイヤーがオフになる
         scroll-layers = <5>;
-    };
 
-    arrows {
+        arrows {
             layers = <2>;
             bindings =
                 <&kp RIGHT_ARROW>,
@@ -79,6 +78,8 @@
             tick = <40>;
             wait-ms = <20>;
             tap-ms = <10>;
+        };
     };
+
 };
 
